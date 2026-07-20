@@ -1,0 +1,185 @@
+<div align="center">
+
+# 👋 Nabil Syawaludin Prima
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=500&lines=Full+Stack+Web+Developer;Laravel+%26+PHP+Enthusiast;Fresh+Graduate+Sistem+Informasi;Membangun+Solusi+Scalable)](https://git.io/typing-svg)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🎯 Tentang Saya
+
+Saya seorang **Full Stack Web Developer** yang passionate dari **Indonesia** 🇮🇩 dengan keahlian di berbagai teknologi web modern. Fresh graduate dari **Universitas Multi Data Palembang** yang senang membangun aplikasi scalable dan menyelesaikan masalah dunia nyata dengan kode. Saat ini sedang mencari kesempatan sebagai **Junior/Full Stack Web Developer**. Mari kita kolaborasi! 🚀
+
+</div>
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+### Frontend
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### Backend
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+
+### Database
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+
+### Mobile
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+
+### Tools & DevOps
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+
+### Sedang Belajar
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-2496ED?style=for-the-badge&logo=github-actions&logoColor=white)
+![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-FF6B6B?style=for-the-badge&logo=code&logoColor=white)
+![Design Patterns](https://img.shields.io/badge/Design_Patterns-4A90E2?style=for-the-badge&logo=designpatterns&logoColor=white)
+
+</div>
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+### 📈 Statistik GitHub
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Kiishinn&theme=react&hide_border=true&show_icons=true&count_private=true&include_all_commits=true)](https://github.com/Kiishinn)
+
+### 🔥 Streak Kontribusi
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=Kiishinn&theme=react&hide_border=true)](https://git.io/streak-stats)
+
+### 💻 Bahasa yang Paling Sering Digunakan
+
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Kiishinn&theme=react&hide_border=true&layout=compact&langs_count=8)](https://github.com/Kiishinn)
+
+### 🏆 GitHub Trophies
+
+[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Kiishinn&theme=react&no-frame=true&column=7)](https://github.com/Kiishinn)
+
+</div>
+
+---
+
+## 🚀 Proyek Unggulan
+
+<div align="center">
+
+### 🛒 Sistem Point of Sale (POS) Multi Cabang
+**Laravel • MySQL • REST API • Role-Based Access**
+
+Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang, fitur-fitur canggih:
+- 📦 Manajemen inventory yang komprehensif
+- 💰 Laporan & analitik penjualan yang detail
+- 🔐 Autentikasi & otorisasi yang aman
+- 👥 Kontrol akses berbasis role (RBAC)
+- 📊 Pemrosesan transaksi real-time
+- 🎯 Dashboard yang user-friendly
+
+**Tech Stack:** Laravel, MySQL, JavaScript, Bootstrap, REST API
+
+[Lihat Proyek](#) • [GitHub Repo](#)
+
+---
+
+</div>
+
+---
+
+## 🎓 Sedang Belajar
+
+<div align="center">
+
+- 🐳 **Docker** - Containerisasi & deployment aplikasi
+- ⚙️ **CI/CD Pipelines** - Testing & deployment otomatis
+- 🧪 **Testing Frameworks** - Unit & integration testing
+- 🏗️ **Clean Architecture** - Kode yang scalable & maintainable
+- 🎨 **Design Patterns** - SOLID principles & best practices
+- ☁️ **Cloud Deployment** - AWS, Heroku, & DigitalOcean
+
+</div>
+
+---
+
+## 🌟 Fun Facts
+
+<div align="center">
+
+- 💡 Saya suka menyelesaikan masalah dunia nyata dengan kode
+- 🤝 Terbuka untuk kolaborasi di proyek open-source
+- 📚 Learner yang passionate & tech enthusiast
+- 🎮 Debug kode seperti detektif 🔍
+- ☕ Kopi + Code = Produktivitas maksimal
+- 😄 Suka ngobrol soal teknologi & best practices
+
+</div>
+
+---
+
+## 📝 Quotes Favorit
+
+<div align="center">
+
+> "Kualitas kode bukan tentang yang paling banyak fitur, tapi tentang yang paling maintainable." — Robert C. Martin
+
+</div>
+
+---
+
+## 🌍 Mari Terhubung
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=web&logoColor=white)](https://nabilsyawaludin.xyz)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kiishinn)
+
+</div>
+
+---
+
+## 👀 Pengunjung Profile
+
+<div align="center">
+
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=Kiishinn.Kiishinn&left_color=00D9FF&right_color=000000)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🎯 Yuk Bangun Sesuatu yang Keren Bersama!
+
+**Jangan ragu untuk menghubungi saya untuk kolaborasi atau sekadar mengobrol** 💬
+
+[![GitHub followers](https://img.shields.io/github/followers/Kiishinn?label=Follow&style=social)](https://github.com/Kiishinn)
+
+</div>
+
+---
+
+*Last updated: Juli 2026 | Selalu update skill & proyek terbaru 🚀*

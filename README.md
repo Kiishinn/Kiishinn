@@ -107,18 +107,6 @@ Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang,
 
 ---
 
-## 🎓 Sedang Belajar
-
-<div align="center">
-
-- 🐳 **Docker** - Containerisasi & deployment aplikasi
-- ⚙️ **CI/CD Pipelines** - Testing & deployment otomatis
-- 🧪 **Testing Frameworks** - Unit & integration testing
-- 🏗️ **Clean Architecture** - Kode yang scalable & maintainable
-- 🎨 **Design Patterns** - SOLID principles & best practices
-- ☁️ **Cloud Deployment** - AWS, Heroku, & DigitalOcean
-
-
 ## 🌍 Mari Terhubung
 
 <div align="center">

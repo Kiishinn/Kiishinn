@@ -4,6 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00D9FF,100:0051FF&height=220&section=header&text=Nabil%20Syawaludin%20Prima&fontSize=42&fontColor=FFFFFF&fontAlignY=35&desc=Full%20Stack%20Web%20Developer%20%7C%20Indonesia%20🇮🇩&descSize=18&descAlignY=55&animation=fadeIn" width="100%" />
 
 <!-- Typing Animation -->
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&lines=Full+Stack+Web+Developer;Laravel+%26+PHP+Enthusiast;Flutter+Mobile+Developer;Fresh+Graduate+Sistem+Informasi;Building+Scalable+Solutions+🚀)](https://git.io/typing-svg)
 
 </div>
@@ -108,33 +109,27 @@ Saat ini aktif mencari kesempatan sebagai <strong>Junior/Full Stack Web Develope
 
 ## 🚀 Proyek Unggulan
 
-<div align="center">
+<table>
+<tr>
+<td width="100%">
 
-<a href="https://github.com/Kiishinn/mochi-penjualan">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kiishinn&repo=mochi-penjualan&theme=react&hide_border=true" alt="POS System" />
-</a>
+### 🛒 [Sistem Point of Sale (POS) Multi Cabang](https://github.com/Kiishinn/mochi-penjualan)
 
-</div>
+Sistem POS berbasis Laravel yang lengkap dengan dukungan multi-cabang, manajemen inventory, laporan penjualan, dan kontrol akses berbasis role.
 
-<details>
-<summary>📋 <strong>Detail Proyek - Sistem Point of Sale (POS) Multi Cabang</strong></summary>
+![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![REST API](https://img.shields.io/badge/REST_API-009688?style=flat-square&logo=fastapi&logoColor=white)
 
-<br/>
+📦 Inventory &nbsp;•&nbsp; 💰 Laporan &nbsp;•&nbsp; 🔐 Auth &nbsp;•&nbsp; 👥 RBAC &nbsp;•&nbsp; 📊 Real-time &nbsp;•&nbsp; 🎯 Dashboard
 
-> **Tech Stack:** `Laravel` `MySQL` `JavaScript` `Bootstrap` `REST API`
+[![View Repository](https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kiishinn/mochi-penjualan)
 
-Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang:
-
-| Fitur | Deskripsi |
-|-------|-----------|
-| 📦 Inventory | Manajemen inventory yang komprehensif |
-| 💰 Laporan | Laporan & analitik penjualan detail |
-| 🔐 Keamanan | Autentikasi & otorisasi yang aman |
-| 👥 RBAC | Kontrol akses berbasis role |
-| 📊 Real-time | Pemrosesan transaksi real-time |
-| 🎯 Dashboard | Dashboard yang user-friendly |
-
-</details>
+</td>
+</tr>
+</table>
 
 ---
 

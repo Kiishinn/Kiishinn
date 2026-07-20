@@ -12,7 +12,7 @@
 
 ### 🎯 Tentang Saya
 
-Saya seorang **Full Stack Web Developer** yang passionate dari **Indonesia** 🇮🇩 dengan keahlian di berbagai teknologi web modern. Fresh graduate dari **Universitas Multi Data Palembang** yang senang membangun aplikasi scalable dan menyelesaikan masalah dunia nyata dengan kode. Saat ini sedang mencari kesempatan sebagai **Junior/Full Stack Web Developer**. Mari kita kolaborasi! 🚀
+Saya seorang **Full Stack Web Developer** yang passionate dari **Indonesia** 🇮🇩 dengan keahlian di berbagai teknologi web modern yang senang membangun aplikasi scalable dan menyelesaikan masalah dunia nyata dengan kode. Saat ini sedang mencari kesempatan sebagai **Junior/Full Stack Web Developer**.
 
 </div>
 
@@ -118,42 +118,14 @@ Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang,
 - 🎨 **Design Patterns** - SOLID principles & best practices
 - ☁️ **Cloud Deployment** - AWS, Heroku, & DigitalOcean
 
-</div>
-
----
-
-## 🌟 Fun Facts
-
-<div align="center">
-
-- 💡 Saya suka menyelesaikan masalah dunia nyata dengan kode
-- 🤝 Terbuka untuk kolaborasi di proyek open-source
-- 📚 Learner yang passionate & tech enthusiast
-- 🎮 Debug kode seperti detektif 🔍
-- ☕ Kopi + Code = Produktivitas maksimal
-- 😄 Suka ngobrol soal teknologi & best practices
-
-</div>
-
----
-
-## 📝 Quotes Favorit
-
-<div align="center">
-
-> "Kualitas kode bukan tentang yang paling banyak fitur, tapi tentang yang paling maintainable." — Robert C. Martin
-
-</div>
-
----
 
 ## 🌍 Mari Terhubung
 
 <div align="center">
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your-email@example.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-linkedin)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=web&logoColor=white)](https://nabilsyawaludin.xyz)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:nabilsyawaludin108@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nabil-syawaludin-a7b9b841a))
+[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=web&logoColor=white)](https://nabilsyawaludin.vercel.app)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Kiishinn)
 
 </div>
@@ -172,9 +144,6 @@ Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang,
 
 <div align="center">
 
-### 🎯 Yuk Bangun Sesuatu yang Keren Bersama!
-
-**Jangan ragu untuk menghubungi saya untuk kolaborasi atau sekadar mengobrol** 💬
 
 [![GitHub followers](https://img.shields.io/github/followers/Kiishinn?label=Follow&style=social)](https://github.com/Kiishinn)
 

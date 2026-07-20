@@ -83,16 +83,17 @@ Saat ini aktif mencari kesempatan sebagai <strong>Junior/Full Stack Web Develope
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Kiishinn&theme=react&hide_border=true&show_icons=true&count_private=true&include_all_commits=true&cache_seconds=1800" alt="GitHub Stats" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Kiishinn&theme=react&hide_border=true&layout=compact&langs_count=8&cache_seconds=1800" alt="Top Languages" height="180" />
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-summary-card-output/github_dark/0-profile-details.svg" alt="Profile Details" width="100%" />
+
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repos Per Language" width="49%" />
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most Commit Language" width="49%" />
+
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-summary-card-output/github_dark/3-stats.svg" alt="Stats" width="49%" />
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-summary-card-output/github_dark/4-productive-time.svg" alt="Productive Time" width="49%" />
 
 <br/>
 
 [![GitHub Streak](https://streak-stats.demolab.com?user=Kiishinn&theme=react&hide_border=true)](https://git.io/streak-stats)
-
-<br/>
-
-[![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=Kiishinn&theme=algolia&no-frame=true&column=7&margin-w=10)](https://github.com/Kiishinn)
 
 <br/>
 

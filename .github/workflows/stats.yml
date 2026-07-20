@@ -23,5 +23,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           USERNAME: Kiishinn
-          BRANCH_NAME: output
+          BRANCH_NAME: output-cards
           UTC_OFFSET: 7

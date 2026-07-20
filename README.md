@@ -107,7 +107,7 @@ Sistem Point of Sale berbasis Laravel yang lengkap dengan dukungan multi-cabang,
 
 **Tech Stack:** Laravel, MySQL, JavaScript, Bootstrap, REST API
 
-[🌐 Lihat Proyek](https://nabilsyawaludin.vercel.app) • [📂 GitHub Repo](#)
+ • [📂 GitHub Repo](https://github.com/Kiishinn/mochi-penjualan)
 
 ---
 

@@ -129,6 +129,16 @@ Sistem POS berbasis Laravel yang lengkap dengan dukungan multi-cabang, manajemen
 
 ---
 
+## 🎵 Sedang Mendengarkan
+
+<p align="center">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31djeihcoclcwvjydeynu6ae2qyu&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31djeihcoclcwvjydeynu6ae2qyu&cover_image=true&theme=spotify-embed&show_offline=false&background_color=121212&interchange=true&profanity=false&hide_remaster=false&bar_color=53b14f&bar_color_cover=true&mode=dark">
+  </a>
+</p>
+
+---
+
 ## 🌍 Mari Terhubung
 
 <div align="center">

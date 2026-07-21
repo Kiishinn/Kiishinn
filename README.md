@@ -83,12 +83,8 @@ Saat ini aktif mencari kesempatan sebagai <strong>Junior/Full Stack Web Develope
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output-cards/profile-details.svg" alt="Profile Details" width="100%" />
-
-<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output-cards/top-languages.svg" alt="Top Languages" width="49%" />
-<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output-cards/achievements.svg" alt="Achievements" width="49%" />
-
-<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output-cards/isocalendar.svg" alt="Activity Calendar" width="100%" />
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/profile-stats.svg" alt="GitHub Stats" width="49%" />
+<img src="https://raw.githubusercontent.com/Kiishinn/Kiishinn/output/top-languages.svg" alt="Top Languages" width="49%" />
 
 <br/>
 

@@ -1,8 +1,8 @@
-name: Generate GitHub Profile Cards
+name: Generate GitHub Profile
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 0 * * *" # Setiap hari
   workflow_dispatch:
 
 permissions:
@@ -14,15 +14,134 @@ jobs:
     timeout-minutes: 15
 
     steps:
-      - name: Generate Profile Details
-        uses: lowlighter/metrics@latest
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Generate Snake Animation
+      - name: Generate Snake Game
+        uses: Platane/snk/svg-only@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          filename: profile-details.svg
-          user: Kiishinn
-          template: classic
-          base: header, activity, community, repositories
-          config_timezone: Asia/Jakarta
-          output_action: commit
-          committer_branch: output-cards
-          config_output: svg
+          github_user_name: Kiishinn
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      # Generate Stats using GitHub API directly
+      - name: Generate Stats Cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Fetch user data from GitHub API
+          USER_DATA=$(curl -s -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/users/Kiishinn)
+          
+          NAME=$(echo "$USER_DATA" | jq -r '.name // "Kiishinn"')
+          REPOS=$(echo "$USER_DATA" | jq -r '.public_repos')
+          FOLLOWERS=$(echo "$USER_DATA" | jq -r '.followers')
+          FOLLOWING=$(echo "$USER_DATA" | jq -r '.following')
+          
+          # Fetch repo data for language stats
+          REPOS_DATA=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/Kiishinn/repos?per_page=100&type=owner")
+          
+          STARS=$(echo "$REPOS_DATA" | jq '[.[].stargazers_count] | add // 0')
+          FORKS=$(echo "$REPOS_DATA" | jq '[.[].forks_count] | add // 0')
+          
+          # Fetch contribution events
+          EVENTS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/users/Kiishinn/events?per_page=100")
+          COMMITS=$(echo "$EVENTS" | jq '[.[] | select(.type=="PushEvent")] | length')
+          
+          mkdir -p dist
+          
+          # Generate Profile Stats SVG
+          cat > dist/profile-stats.svg << 'SVGEOF'
+          <svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" fill="none">
+            <style>
+              .header { font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #58A6FF; }
+              .stat { font: 600 14px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
+              .label { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8B949E; }
+              .icon { fill: #58A6FF; }
+              .rank-circle { stroke: #58A6FF; fill: none; stroke-width: 6; }
+              .rank-text { font: 800 24px 'Segoe UI', Ubuntu, sans-serif; fill: #58A6FF; }
+            </style>
+            <rect x="0.5" y="0.5" rx="8" width="494" height="194" fill="#0D1117" stroke="#30363D"/>
+            <text x="25" y="35" class="header">📊 GitHub Stats — USERNAME_PLACEHOLDER</text>
+            
+            <g transform="translate(25, 55)">
+              <text class="stat" y="20">⭐ Total Stars:</text>
+              <text class="stat" x="200" y="20">STARS_PLACEHOLDER</text>
+              
+              <text class="stat" y="48">🍴 Total Forks:</text>
+              <text class="stat" x="200" y="48">FORKS_PLACEHOLDER</text>
+              
+              <text class="stat" y="76">📝 Total Commits:</text>
+              <text class="stat" x="200" y="76">COMMITS_PLACEHOLDER</text>
+              
+              <text class="stat" y="104">📦 Public Repos:</text>
+              <text class="stat" x="200" y="104">REPOS_PLACEHOLDER</text>
+              
+              <text class="stat" y="132">👥 Followers:</text>
+              <text class="stat" x="200" y="132">FOLLOWERS_PLACEHOLDER</text>
+            </g>
+          </svg>
+          SVGEOF
+          
+          # Replace placeholders
+          sed -i "s/USERNAME_PLACEHOLDER/$NAME/g" dist/profile-stats.svg
+          sed -i "s/STARS_PLACEHOLDER/$STARS/g" dist/profile-stats.svg
+          sed -i "s/FORKS_PLACEHOLDER/$FORKS/g" dist/profile-stats.svg
+          sed -i "s/COMMITS_PLACEHOLDER/$COMMITS/g" dist/profile-stats.svg
+          sed -i "s/REPOS_PLACEHOLDER/$REPOS/g" dist/profile-stats.svg
+          sed -i "s/FOLLOWERS_PLACEHOLDER/$FOLLOWERS/g" dist/profile-stats.svg
+          
+          # Generate Top Languages SVG
+          LANG_DATA=$(echo "$REPOS_DATA" | jq -r '[.[] | select(.language != null) | .language] | group_by(.) | map({lang: .[0], count: length}) | sort_by(-.count) | .[0:6]')
+          TOTAL=$(echo "$LANG_DATA" | jq '[.[].count] | add')
+          
+          cat > dist/top-languages.svg << 'SVGEOF'
+          <svg xmlns="http://www.w3.org/2000/svg" width="350" height="235" viewBox="0 0 350 235" fill="none">
+            <style>
+              .header { font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #58A6FF; }
+              .lang { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
+              .pct { font: 400 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8B949E; }
+            </style>
+            <rect x="0.5" y="0.5" rx="8" width="349" height="234" fill="#0D1117" stroke="#30363D"/>
+            <text x="25" y="35" class="header">💻 Most Used Languages</text>
+          SVGEOF
+          
+          # Add language bars
+          Y=60
+          COLORS=("#F1E05A" "#E34C26" "#4F5D95" "#563D7C" "#3572A5" "#B07219" "#00ADD8" "#DEA584")
+          INDEX=0
+          
+          echo "$LANG_DATA" | jq -c '.[]' | while read -r item; do
+            LANG=$(echo "$item" | jq -r '.lang')
+            COUNT=$(echo "$item" | jq -r '.count')
+            PCT=$(echo "scale=1; $COUNT * 100 / $TOTAL" | bc)
+            BAR_WIDTH=$(echo "scale=0; $PCT * 2.8" | bc | cut -d. -f1)
+            COLOR=${COLORS[$INDEX]:-"#8B949E"}
+            
+            cat >> dist/top-languages.svg << EOF
+            <g transform="translate(25, $Y)">
+              <text class="lang" y="12">$LANG</text>
+              <rect x="0" y="20" width="280" height="8" rx="4" fill="#21262D"/>
+              <rect x="0" y="20" width="$BAR_WIDTH" height="8" rx="4" fill="$COLOR"/>
+              <text class="pct" x="290" y="30">$PCT%</text>
+            </g>
+          EOF
+            Y=$((Y + 40))
+            INDEX=$((INDEX + 1))
+          done
+          
+          echo '</svg>' >> dist/top-languages.svg
+          
+          echo "Generated files:"
+          ls -la dist/
+
+      # Push ALL files to output branch
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v4.2.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: update profile stats & snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

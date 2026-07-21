@@ -46,7 +46,7 @@ jobs:
           repos = api_get("https://api.github.com/users/Kiishinn/repos?per_page=100&type=owner")
           events = api_get("https://api.github.com/users/Kiishinn/events?per_page=100")
 
-          name = user.get("name", "Kiishinn") or "Kiishinn"
+          name = "Nabil Syawaludin Prima"
           public_repos = user.get("public_repos", 0)
           followers = user.get("followers", 0)
           stars = sum(r.get("stargazers_count", 0) for r in repos)

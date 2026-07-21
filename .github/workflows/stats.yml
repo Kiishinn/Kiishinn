@@ -11,17 +11,86 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate Profile Summary Cards
-        uses: vn7n24fzkq/github-profile-summary-cards@release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Card 1: Profile Details
+      - name: Generate Profile Details
+        uses: lowlighter/metrics@latest
         with:
-          USERNAME: Kiishinn
-          BRANCH_NAME: output-cards
-          UTC_OFFSET: 7
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: profile-details.svg
+          user: Kiishinn
+          template: classic
+          base: header, activity, community, repositories
+          config_timezone: Asia/Jakarta
+          config_display: large
+          output_action: none
+          output_condition: data-changed
+
+      # Card 2: Languages
+      - name: Generate Languages Card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: top-languages.svg
+          user: Kiishinn
+          template: classic
+          base: ""
+          config_timezone: Asia/Jakarta
+          output_action: none
+          output_condition: data-changed
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used
+          plugin_languages_colors: github
+
+      # Card 3: Achievements
+      - name: Generate Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: achievements.svg
+          user: Kiishinn
+          template: classic
+          base: ""
+          config_timezone: Asia/Jakarta
+          output_action: none
+          output_condition: data-changed
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+
+      # Card 4: Isocalendar
+      - name: Generate Activity Calendar
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          filename: isocalendar.svg
+          user: Kiishinn
+          template: classic
+          base: ""
+          config_timezone: Asia/Jakarta
+          output_action: none
+          output_condition: data-changed
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: half-year
+
+      # Push all generated SVGs to output-cards branch
+      - name: Push to output-cards branch
+        run: |
+          mkdir -p dist
+          cp /metrics_renders/*.svg dist/ 2>/dev/null || true
+          ls -la dist/
+          cd dist
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore: update profile cards"
+          git branch -M output-cards
+          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push -u origin output-cards --force

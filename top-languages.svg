@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="260" viewBox="0 0 340 260" fill="none">
+<defs>
+  <linearGradient id="langGrad" x1="0" y1="0" x2="340" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0%" stop-color="#00D9FF"/>
+    <stop offset="100%" stop-color="#0051FF"/>
+  </linearGradient>
+  <clipPath id="barClip"><rect x="0" y="0" width="280" height="10" rx="5"/></clipPath>
+</defs>
+<rect x="0.5" y="0.5" rx="12" width="339" height="259" fill="#0D1117" stroke="#30363D"/>
+<rect x="0.5" y="0.5" rx="12" width="339" height="4" fill="url(#langGrad)"/>
+<text x="170" y="38" text-anchor="middle" class="card-title">Most Used Languages</text>
+<text x="170" y="54" text-anchor="middle" class="card-subtitle">Based on 22 repositories</text>
+<g transform="translate(30, 68)" clip-path="url(#barClip)"><rect x="0" y="0" width="64" height="10" fill="#F1E05A"/><rect x="64" y="0" width="51" height="10" fill="#3178C6"/><rect x="115" y="0" width="51" height="10" fill="#F34B7D"/><rect x="166" y="0" width="38" height="10" fill="#563D7C"/><rect x="204" y="0" width="25" height="10" fill="#00B4AB"/><rect x="229" y="0" width="25" height="10" fill="#E34C26"/><rect x="254" y="0" width="13" height="10" fill="#4F5D95"/><rect x="267" y="0" width="13" height="10" fill="#F7523F"/></g>
+<style>
+  .card-title { font: 700 16px 'Segoe UI', Ubuntu, sans-serif; fill: #58A6FF; }
+  .card-subtitle { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #8B949E; }
+  .lang-name { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #C9D1D9; }
+  .lang-pct { font: 400 12px 'Segoe UI', Ubuntu, monospace; fill: #8B949E; }
+</style>
+  <g transform="translate(25, 90)">
+    <circle cx="6" cy="-4" r="5" fill="#F1E05A"/>
+    <text x="16" y="0" class="lang-name">JavaScript</text>
+    <text x="120" y="0" class="lang-pct">22.7%</text>
+  </g>
+  <g transform="translate(180, 90)">
+    <circle cx="6" cy="-4" r="5" fill="#3178C6"/>
+    <text x="16" y="0" class="lang-name">TypeScript</text>
+    <text x="120" y="0" class="lang-pct">18.2%</text>
+  </g>
+  <g transform="translate(25, 118)">
+    <circle cx="6" cy="-4" r="5" fill="#F34B7D"/>
+    <text x="16" y="0" class="lang-name">C++</text>
+    <text x="120" y="0" class="lang-pct">18.2%</text>
+  </g>
+  <g transform="translate(180, 118)">
+    <circle cx="6" cy="-4" r="5" fill="#563D7C"/>
+    <text x="16" y="0" class="lang-name">CSS</text>
+    <text x="120" y="0" class="lang-pct">13.6%</text>
+  </g>
+  <g transform="translate(25, 146)">
+    <circle cx="6" cy="-4" r="5" fill="#00B4AB"/>
+    <text x="16" y="0" class="lang-name">Dart</text>
+    <text x="120" y="0" class="lang-pct">9.1%</text>
+  </g>
+  <g transform="translate(180, 146)">
+    <circle cx="6" cy="-4" r="5" fill="#E34C26"/>
+    <text x="16" y="0" class="lang-name">HTML</text>
+    <text x="120" y="0" class="lang-pct">9.1%</text>
+  </g>
+  <g transform="translate(25, 174)">
+    <circle cx="6" cy="-4" r="5" fill="#4F5D95"/>
+    <text x="16" y="0" class="lang-name">PHP</text>
+    <text x="120" y="0" class="lang-pct">4.5%</text>
+  </g>
+  <g transform="translate(180, 174)">
+    <circle cx="6" cy="-4" r="5" fill="#F7523F"/>
+    <text x="16" y="0" class="lang-name">Blade</text>
+    <text x="120" y="0" class="lang-pct">4.5%</text>
+  </g>
+</svg>
